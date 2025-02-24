@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+}
+
+main {
+    height: 100vh; 
+    background-color: red;
+}
+
+.container {
+    height: 100%;
+}
