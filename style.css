@@ -1,3 +1,12 @@
+:root {
+    --main-side: #F4FAFF;
+    --first-side: #2D336B;
+    --second-side: #7886C7;
+    --background: #DEE7E7;
+    --button-color: #A9B5DF;
+    --font-variation: lightgray;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +14,113 @@
 }
 
 body {
-    background-color: yellow;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
     height: 100vh; 
-    background-color: red;
+    background-color: var(--background);
 }
 
 .container {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.comunity {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 70%;
+    background-color: var(--main-side);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.comunity__title {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    padding: 4em 8em;
+}
+
+.comunity__title h1 {
+    color: var(--first-side);
+    margin-bottom: 1em;
+}
+
+.comunity__title h2 {
+    color: var(--second-side);
+    margin-bottom: .5em;
+}
+
+.comunity__title p {
+    color: var(--background);
+}
+
+.subscription {
+    display: flex;
+    height: 50%;
+}
+
+.subscription section {
+    height: 100%;
+    width: 50%;
+}
+
+.subscription__price {
+    /* text-align: center; */
+    padding: 4em 8em;
+    background-color: var(--first-side);
+}
+
+.subscription__price h2 {
+    color: var(--main-side);
+    margin-bottom: 1em;
+}
+
+.subscription__price p {
+    color: var(--background);
+    margin-bottom: .5em;
+}
+
+.subscription__price p span {
+    font-size: 2em;
+    color: var(--main-side);
+    margin-right: .5em;
+}
+
+.subscription__price h2 + p {
+    color: var(--font-variation);
+}
+
+.subscription__price p + p {
+    margin-bottom: 1em;
+}
+
+.subscription__price button {
+    width: 50%;
+    background-color: var(--button-color);
+    border: none;
+    padding: 1em 2em;
+    color: var(--main-side);
+    font-size: 1em;
+}
+
+.subscription__description {
+    padding: 4em 8em;
+    background-color: var(--second-side);
+}
+
+.subscription__description h2 {
+    color: var(--main-side);
+    margin-bottom: 1em;
+}
+
+.subscription__description p {
+    color: var(--background);
+    line-height: 1.7em;
+}
+
